@@ -10,4 +10,14 @@ router.get(
   }
 );
 
+router.get(
+  "/",
+  (req: Request, res: Response, next: NextFunction) => {
+    res.render("suckiducky", {
+      title: "Login"
+  });
+  }
+);
+
+
 export const exampleRouter = router;
